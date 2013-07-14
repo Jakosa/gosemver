@@ -1,7 +1,7 @@
 package gosemver
 
 import (
-	"strconv"
+	//"strconv"
 	"strings"
 )
 
