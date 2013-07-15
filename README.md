@@ -5,9 +5,7 @@
 
 Compare 2 version formats for which is greater.<br>
 For valid version examples and more information see http://semver.org<br>
-Returns: 2 values. 
-* First: 0 if equals, 1 if the first version arg is greater, 2 if the second.
-* Second: error if any, otherwise nil.
+Returns: 0 if equals, 1 if the first version arg is greater, 2 if the second, -1 if problem occured.
 
 ### Usage
 
@@ -20,10 +18,6 @@ import (
 )
 
 func main() {
-	result, err := gosemver.Compare("v0.3.6", "0.4")
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(result)
+	fmt.Println(gosemver.Compare("v0.3.6", "0.4"))
 }
 ```
