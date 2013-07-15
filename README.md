@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-	result, nil := gosemver.Compare("v0.3.6", "0.4")
+	result, err := gosemver.Compare("v0.3.6", "0.4")
 	if err != nil {
 		fmt.Println(err)
 	}
