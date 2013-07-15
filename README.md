@@ -11,7 +11,8 @@ Returns: 2 values.
 
 ### Usage
 
-`package main
+```go
+package main
 
 import (
 	"fmt"
@@ -19,5 +20,9 @@ import (
 )
 
 func main() {
-	fmt.Println(gosemver.Compare("v0.3.6", "0.4"))	
-}`
+	result, nil := gosemver.Compare("v0.3.6", "0.4")
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(result)
+}```
