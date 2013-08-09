@@ -7,19 +7,18 @@ import (
 // Compare 2 version formats for which is greater.
 // For more information see http://semver.org
 // Returns: 0 if equals, 1 if the first version arg is greater, 2 if the second, -1 if problem occured.
+
+const replaceMap = map[string]string{"v": "", "-": "."}
+
 func Compare(v1, v2 string) int {
 	//keywords := {"alpha,beta,rc,p"}
-	if strings.Contains(v1, "v") {
-		strings.Replace(v1, "v", "", -1)
-	}
-	if strings.Contains(v2, "v") {
-		strings.Replace(v2, "v", "", -1)
-	}
-	if strings.Contains(v1, "-") {
-		strings.Replace(v1, "-", ".", -1)
-	}
-	if strings.Contains(v2, "-") {
-		strings.Replace(v2, "-", ".", -1)
+	for k, v := range replaceMap {
+		if strings.Contains(v1, k) {
+			strings.Replace(v1, k, v, -1)
+		}
+		if strings.Contains(v2, k) {
+			strings.Replace(v2, k, v, -1)
+		}
 	}
 	ver1 := strings.Split(v1, ".")
 	ver2 := strings.Split(v2, ".")
