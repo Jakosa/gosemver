@@ -1,5 +1,6 @@
 # gosemver
 ### LICENCE: GNU GPL 3
+### AUTHOR: Jackneill
 
 ### Version comparing library in go (using semantic versioning standard http://semver.org)
 
@@ -18,6 +19,6 @@ import (
 )
 
 func main() {
-	fmt.Println(gosemver.Compare("v0.3.6", "0.4"))
+	fmt.Println(gosemver.Compare("v0.3.6", "0.4")) // prints 2
 }
 ```

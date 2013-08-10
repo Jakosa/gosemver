@@ -1,15 +1,16 @@
+// Semantic version comparing library.
 package gosemver
 
 import (
 	"strings"
 )
 
+var replaceMap = map[string]string{"v": "", "-": "."}
+
 // Compare 2 version formats for which is greater.
 // For more information see http://semver.org
-// Returns: 0 if equals, 1 if the first version arg is greater, 2 if the second, -1 if problem occured.
-
-const replaceMap = map[string]string{"v": "", "-": "."}
-
+// Returns: 0 if equals, 1 if the first version arg is greater,
+// 2 if the second, -1 if problem occured.
 func Compare(v1, v2 string) int {
 	//keywords := {"alpha,beta,rc,p"}
 	for k, v := range replaceMap {
