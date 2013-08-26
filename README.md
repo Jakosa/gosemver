@@ -1,5 +1,5 @@
 # gosemver
-## LICENCE: GNU GPL 3
+## LICENCE: GNU GPL v3
 
 ### Version comparing library in go (using semantic versioning standard http://semver.org)
 
