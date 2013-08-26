@@ -1,6 +1,5 @@
 # gosemver
-### LICENCE: GNU GPL 3
-### AUTHOR: Jackneill
+## LICENCE: GNU GPL 3
 
 ### Version comparing library in go (using semantic versioning standard http://semver.org)
 
