@@ -1,4 +1,4 @@
-# gosemver
+# gosemver [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Schumix/gosemver/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ## LICENCE: GNU GPL v3
 
 ### Version comparing library in go (using semantic versioning standard http://semver.org)
