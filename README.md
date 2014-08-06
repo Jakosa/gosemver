@@ -14,7 +14,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Jackneill/gosemver"
+	"github.com/Jakosa/gosemver"
 )
 
 func main() {
